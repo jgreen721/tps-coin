@@ -21,3 +21,16 @@ li {
 a {
   text-decoration: none;
 }
+
+.bold {
+  font-weight: 500;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}

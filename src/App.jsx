@@ -7,9 +7,12 @@ function App() {
 
   return (
     <div className="app">
-      <div className="app-content">
-        <Navbar/>
-        <Hero/>
+      <div className="app-content-container">
+        <div className="app-bg"></div>
+        <div className="app-content">
+          <Navbar/>
+          <Hero/>
+        </div>
       </div>
     </div>
   )

@@ -1,20 +1,18 @@
 .hero-billboard {
   text-transform: uppercase;
-  padding-top: 7.5rem;
+  /* padding-top: 7.5rem; */
   /* margin: 2rem 0; */
   /* transform: scale(1) translateX(1rem); */
   /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: 5;
-  transform: scaleY(0);
-  animation: scaleY 1.5s 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
-  /* background: orange; */
+  overflow: hidden;
 }
 
 @keyframes scaleY {
@@ -33,6 +31,16 @@
 
 .middle-billboard-row {
   position: relative;
+  height: 0%;
+  overflow: hidden;
+  animation: growmiddlerow 2s 3.25s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    forwards;
+}
+
+@keyframes growmiddlerow {
+  100% {
+    height: 150px;
+  }
 }
 
 .middle-billboard-h1 {
@@ -44,12 +52,13 @@
 
 .shadow-middle-h1 {
   filter: blur(2.5px);
+  /* transform: scaleY(0); */
 }
 
 .middle-billboard-h1-absolute {
   position: absolute;
   z-index: 10;
-  background: url("./spacebg2.jpeg");
+  background: url("/spacebg2.jpeg");
   background-size: cover;
   background-position-y: 0%;
   color: transparent;

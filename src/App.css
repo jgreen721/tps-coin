@@ -1,5 +1,4 @@
 .app {
-  /* min-height: 100vh; */
   background: linear-gradient(var(--darkblack), var(--black));
   color: white;
   position: relative;
@@ -7,7 +6,38 @@
   overflow: hidden;
 }
 
+.app-content-container {
+  max-width: 85rem;
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+  font-family: var(--montserrat);
+  /* border: 2px solid red; */
+}
+
 .app::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/bitcoinbg.jpg");
+  background-size: cover;
+  inset: 0;
+}
+
+.app-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 50;
+  padding: 0 1.2rem;
+}
+
+.app-bg {
+  position: absolute;
+  inset: 0;
+}
+
+.app-bg::after {
   content: "";
   position: absolute;
   background: gray;
@@ -19,41 +49,25 @@
   left: -25rem;
   transform: skew(10deg);
   filter: blur(65px);
-  opacity: 35%;
+  opacity: 85%;
   background: radial-gradient(grey, teal);
+  z-index: 20;
 }
 
-.app::before {
-  content: "";
-  position: absolute;
-  background: gray;
-  border-radius: 500px;
-  width: 35rem;
-  height: 35rem;
-  bottom: -15rem;
-  right: -15rem;
-  transform: skew(10deg);
-  filter: blur(85px);
-  opacity: 25%;
-  background: radial-gradient(teal, grey);
+.slide-in-right {
+  transform: translateX(-100vw);
+  animation: slidetocenter 1.5s 1s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    forwards;
 }
 
-.app-content {
-  max-width: 85rem;
-  height: 100%;
-  position: relative;
-  /* border: 2px solid red; */
-  margin: 0 auto;
-  font-family: var(--montserrat);
-  z-index: 10;
-  padding: 0 1.2rem;
+.slide-in-left {
+  transform: translateX(100vw);
+  animation: slidetocenter 1.5s 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    forwards;
 }
 
-.flex {
-  display: flex;
-}
-
-.flex-center {
-  display: flex;
-  align-items: center;
+@keyframes slidetocenter {
+  100% {
+    transform: translateX(2rem) scaleY(0.65);
+  }
 }
