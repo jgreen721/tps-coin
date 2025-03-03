@@ -1,5 +1,6 @@
 import React, { useEffect,useState, useRef } from 'react'
 import {Canvas, useFrame} from "@react-three/fiber"
+import { Overlays } from './components'
 import { Environment, ScrollControls, useGLTF} from "@react-three/drei"
 import "./Coin.css"
 
@@ -17,11 +18,11 @@ const Experience = ()=>{
 
   useEffect(()=>{
     if(innerWidth < 850){
-        setScale(.5)
+        setScale(.35)
     }
   })
   return(
-    <group ref={coinRef} scale={scale} position={[0,0,1]} rotation={[Math.PI * -.15,Math.PI * .5,0]}>
+    <group ref={coinRef} scale={scale} position={[-.25,0,1]} rotation={[Math.PI * -.15,Math.PI * .5,0]}>
       <primitive object={img.scene}/>
     </group>
   )
@@ -33,6 +34,7 @@ const Coin = () => {
         <Canvas>
           <ScrollControls pages={4}>
             <ambientLight/>
+            <Overlays/>
             <Environment preset="city"/>
             <Experience/>
           </ScrollControls>

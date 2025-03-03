@@ -46,6 +46,7 @@
   margin: 0 auto;
   font-family: var(--montserrat);
   z-index: 10;
+  padding: 0 1.2rem;
 }
 
 .flex {

@@ -1,8 +1,16 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import { Scroll } from '@react-three/drei'
+
+
+const OverlaySection = ()=>{
+    
+}
 
 const Overlays = () => {
   return (
-    <div>Overlays</div>
+    <Scroll html>
+        <OverlaySection/>
+    </Scroll>
   )
 }
 

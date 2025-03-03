@@ -76,3 +76,10 @@
   line-height: 2.5rem;
   transform: translateX(2rem) scaleY(0.5);
 }
+
+@media screen and (max-width: 750px) {
+  .hero-billboard {
+    transform: scale(0.65) translateX(-1rem);
+    animation: none;
+  }
+}
