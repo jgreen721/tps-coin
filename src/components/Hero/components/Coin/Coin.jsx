@@ -1,7 +1,7 @@
 import React, { useEffect,useState, useRef,Suspense } from 'react'
 import {Canvas, useFrame} from "@react-three/fiber"
 import { Overlays } from './components'
-import { Environment, ScrollControls, useGLTF} from "@react-three/drei"
+import { Environment, ScrollControls, useGLTF,Box} from "@react-three/drei"
 import "./Coin.css"
 
 
@@ -36,16 +36,19 @@ const Loader=()=> {
 const Coin = () => {
   return (
     <div className="canvas-parent-div">
+    {/* <Suspense fallback={<Loader/>}> */}
+
         <Canvas>
-          <Suspense fallback={<Loader/>}>
-          <ScrollControls pages={4}>
             <ambientLight/>
-            <Overlays/>
+            {/* <Overlays/> */}
+              {/* <ScrollControls pages={4}> */}
+                <Experience/>
+                
+              {/* </ScrollControls> */}
             <Environment preset="city"/>
-            <Experience/>
-          </ScrollControls>
-          </Suspense>
         </Canvas>
+        {/* </Suspense> */}
+
     </div>
   )
 }
