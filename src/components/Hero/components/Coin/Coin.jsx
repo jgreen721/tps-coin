@@ -1,4 +1,4 @@
-import React, { useEffect,useState, useRef } from 'react'
+import React, { useEffect,useState, useRef,Suspense } from 'react'
 import {Canvas, useFrame} from "@react-three/fiber"
 import { Overlays } from './components'
 import { Environment, ScrollControls, useGLTF} from "@react-three/drei"
@@ -28,16 +28,23 @@ const Experience = ()=>{
   )
 }
 
+
+const Loader=()=> {
+  return <span>Loading 3D model...</span>;
+}
+
 const Coin = () => {
   return (
     <div className="canvas-parent-div">
         <Canvas>
+          <Suspense fallback={<Loader/>}>
           <ScrollControls pages={4}>
             <ambientLight/>
             <Overlays/>
             <Environment preset="city"/>
             <Experience/>
           </ScrollControls>
+          </Suspense>
         </Canvas>
     </div>
   )
