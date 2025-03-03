@@ -1,0 +1,11 @@
+.nav-letter-h3 {
+  margin: 0rem 0.025rem;
+  filter: blur(200px);
+  animation: clearblur 1s var(--delay) forwards;
+}
+
+@keyframes clearblur {
+  100% {
+    filter: blur(0px);
+  }
+}

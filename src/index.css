@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --darkblack: rgb(5, 5, 10);
+  --black: rgb(20, 20, 20);
+  --lightblack: rgb(35, 30, 30);
+  --arsenal: "Arsenal SC", sans-serif;
+  --montserrat: "Montserrat", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,49 @@
+.split-text-parent {
+  position: relative;
+  overflow: hidden;
+  /* border: 2px solid red; */
+}
+
+.split-text-div {
+  /* border: 1px solid red; */
+  position: relative;
+  overflow: hidden;
+}
+
+.top-text-div:first-child {
+  animation: lowersplittext 1s 1.5s forwards;
+  transform: translateY(-4rem);
+}
+
+@keyframes lowersplittext {
+  100% {
+    transform: translateY(-0.025rem);
+  }
+}
+.bottom-text-div:nth-child(2) {
+  animation: raisesplittext 1s 1.5s forwards;
+
+  transform: translateY(4rem);
+}
+
+@keyframes raisesplittext {
+  100% {
+    transform: translateY(0.025rem);
+  }
+}
+
+.absolute-text {
+  position: absolute;
+}
+
+.split-text-offset-bottom {
+  transform: translateY(40%);
+}
+
+.split-text-offset-top {
+  transform: translateY(-50%);
+}
+
+.transparent-text {
+  color: transparent;
+}
