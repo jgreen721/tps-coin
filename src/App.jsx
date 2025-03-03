@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import {Navbar,Hero} from "./components"
 import './App.css'
+import { Billboard } from './components/Hero/components'
 
 function App() {
 
@@ -11,7 +12,9 @@ function App() {
         <div className="app-bg"></div>
         <div className="app-content">
           <Navbar/>
-          <Hero/>
+          {/* <Hero/> */}
+          <Billboard/>
+          <h1 className="arsenal">COMING SOON</h1>
         </div>
       </div>
     </div>

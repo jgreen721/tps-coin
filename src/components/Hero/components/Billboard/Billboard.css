@@ -1,58 +1,73 @@
-.hero-billboard {
+.billboard {
   text-transform: uppercase;
   /* padding-top: 7.5rem; */
   /* margin: 2rem 0; */
   /* transform: scale(1) translateX(1rem); */
   /* border: 2px solid red; */
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: 100%;
-  height: 100%;
+  justify-content: center; */
+  /* width: fit-content; */
+
   z-index: 5;
   overflow: hidden;
+  position: relative;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 10px 4px 15px black;
+  /* width: 100%; */
 }
 
-@keyframes scaleY {
-  100% {
-    transform: scaleY(1);
-  }
+.billboard::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(10px);
 }
 
-.top-billboard-h1 {
+.billboard-h1-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* border: 3px solid green; */
+  font-weight: 400;
+  position: relative;
+  z-index: 10;
+}
+
+.billboard-h1-row h1 {
   font-weight: 200;
-  letter-spacing: 3.5rem;
-  font-size: 3rem;
-  line-height: 2rem;
-  transform: scaleY(0.45) translateX(1.25rem);
 }
 
 .middle-billboard-row {
   position: relative;
-  height: 0%;
   overflow: hidden;
+  height: 0px;
+  /* border: 2px solid red; */
+  transition: 0.25s ease;
   animation: growmiddlerow 2s 3.25s cubic-bezier(0.175, 0.885, 0.32, 1.275)
     forwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes growmiddlerow {
   100% {
-    height: 150px;
+    height: 85px;
   }
 }
 
 .middle-billboard-h1 {
   font-size: 12rem;
-  line-height: 9rem;
+  /* line-height: 15rem; */
   font-weight: 500;
   position: relative;
 }
 
 .shadow-middle-h1 {
   filter: blur(2.5px);
-  /* transform: scaleY(0); */
 }
 
 .middle-billboard-h1-absolute {
@@ -78,17 +93,15 @@
   }
 }
 
-.bottom-billboard-h1 {
-  letter-spacing: 5rem;
-  font-weight: 100;
-  font-size: 3.5rem;
-  line-height: 2.5rem;
-  transform: translateX(2rem) scaleY(0.5);
-}
-
 @media screen and (max-width: 750px) {
   .hero-billboard {
-    transform: scale(0.65) translateX(-2.5rem);
+    /* transform: translateX(-2.5rem); */
     animation: none;
+  }
+
+  .middle-billboard-row h1 {
+    font-size: 5rem;
+    line-height: 6.5rem;
+    /* border: 3px solid orange; */
   }
 }

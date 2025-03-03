@@ -3,18 +3,24 @@ import "./Billboard.css"
 
 const Billboard = () => {
   return (
-    <div className="hero-billboard">
-    <h1 className="top-billboard-h1 slide-in-right">To<span className="bold">tal</span></h1>
+    <div className="billboard">
+    <div className="billboard-h1-row slide-in-right">
+      <h1>T</h1>
+      <h1>o</h1>
+      <h1>t</h1>
+      <h1>a</h1>
+      <h1>l</h1>
+    </div>
     <div className="middle-billboard-row flex">
-      {/* <div className="middle-billboard-h1">P</div>
-      <div className="middle-billboard-h1">O</div>
-      <div className="middle-billboard-h1">S</div> */}
       <h1 className="middle-billboard-h1 shadow-middle-h1">POS</h1>
       <h1 className="middle-billboard-h1 middle-billboard-h1-absolute">POS</h1>
     </div>
-    <div className="bottom-billboard-row">
-      <h1 className="bottom-billboard-h1 slide-in-left">C<span className="bold">O</span>IN</h1>
-    </div>
+      <div className="billboard-h1-row slide-in-left">
+        <h1>C</h1>
+        <h1>o</h1>
+        <h1>i</h1>
+        <h1>n</h1>
+      </div>
   </div>
   )
 }
