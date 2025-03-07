@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
@@ -23,7 +27,11 @@ a {
 }
 
 .bold {
-  font-weight: 500;
+  font-weight: 600;
+}
+
+.thin {
+  font-weight: 200;
 }
 
 .flex {

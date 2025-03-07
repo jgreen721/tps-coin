@@ -1,0 +1,171 @@
+.header {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header-card {
+  position: relative;
+  padding: 2rem;
+  z-index: 5;
+  overflow: hidden;
+  position: relative;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  width: clamp(45%, 500px, 90%);
+  box-shadow: 10px 4px 15px black;
+}
+
+.header-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(10px);
+}
+
+.header-card div {
+  position: relative;
+  z-index: 5;
+}
+
+.header-h1-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: 400;
+  /* position: relative;
+  z-index: 10; */
+}
+
+.header-h1-row h1 {
+  font-weight: 200;
+}
+
+.middle-header-row {
+  position: relative;
+  overflow: hidden;
+  height: 0px;
+  transition: 0.25s ease;
+  animation: growmiddlerow 2s 3.25s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    forwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* inset: 0; */
+}
+
+@keyframes growmiddlerow {
+  100% {
+    height: 155px;
+  }
+}
+
+.middle-header-h1 {
+  font-size: 12rem;
+  font-weight: 500;
+  position: relative;
+}
+
+.shadow-middle-h1 {
+  filter: blur(2.5px);
+  position: absolute;
+}
+
+.middle-header-h1 {
+  /* position: absolute; */
+  z-index: 10;
+  background: url("/spaceh1textbg.jpeg");
+  background-size: cover;
+  background-position-y: 0%;
+  color: transparent;
+  background-clip: text;
+  animation: scrollbgtext 7s linear infinite;
+}
+
+@keyframes scrollbgtext {
+  0% {
+    background-position-y: 100%;
+  }
+  50% {
+    background-position-y: 0%;
+  }
+  100% {
+    background-position-y: 100%;
+  }
+}
+
+.c-coin {
+  position: relative;
+}
+
+.c-coin::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 10px;
+  background: white;
+  left: 0.65rem;
+  top: -0.2rem;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  animation: scaleY 0.5s 5s forwards;
+}
+
+.c-coin::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 10px;
+  background: white;
+  left: 0.65rem;
+  bottom: 0rem;
+  transform: scaleY(0);
+  transform-origin: top;
+  animation: scaleY 0.5s 5s forwards;
+}
+
+.blurb-div {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(var(--lightblack), var(--black));
+  color: white;
+  border-radius: 50%;
+  /* border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem; */
+  padding: 1rem;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  animation: scaleY 1s 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.header-blurb {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  display: block;
+  letter-spacing: 0.15rem;
+  transform: translateY(-10rem);
+  margin-top: 1rem;
+  animation: translateYToZero 1s 4s cubic-bezier(0.175, 0.885, 0.32, 1.075)
+    forwards;
+}
+
+@media screen and (max-width: 750px) {
+  .hero-header {
+    animation: none;
+  }
+
+  .middle-header-row h1 {
+    font-size: 7rem;
+    line-height: 6.5rem;
+  }
+
+  @keyframes growmiddlerow {
+    100% {
+      height: 105px;
+    }
+  }
+}

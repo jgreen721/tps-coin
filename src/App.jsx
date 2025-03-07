@@ -1,20 +1,22 @@
 import { useState } from 'react'
-import {Navbar,Hero} from "./components"
+import {Navbar,Header,Reasons,HowTos} from "./components"
+import data from "./data.json"
 import './App.css'
-import { Billboard } from './components/Hero/components'
 
 function App() {
+
+  console.log(data)
 
 
   return (
     <div className="app">
+      <div className="app-bg"></div>
       <div className="app-content-container">
-        <div className="app-bg"></div>
         <div className="app-content">
           <Navbar/>
-          {/* <Hero/> */}
-          <Billboard/>
-          <h1 className="arsenal">COMING SOON</h1>
+          <Header blurb={data.shortBlurb}/>
+          <Reasons reasons={data.reasons}/>
+          <HowTos howTos={data.howTos}/>
         </div>
       </div>
     </div>

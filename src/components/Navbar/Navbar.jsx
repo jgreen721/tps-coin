@@ -8,8 +8,8 @@ import "./Navbar.css"
 
 const Navbar = () => {
     const links =[
-        {id:1,name:"About",link:"#about"},
-        {id:2,name:"Contact",link:"#contact"},
+        {id:1,name:"Reasons",link:"#reasons"},
+        {id:2,name:"How To",link:"#howto"},
     ]
   return (
     <nav className="nav">

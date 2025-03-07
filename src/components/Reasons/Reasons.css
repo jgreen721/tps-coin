@@ -1,0 +1,68 @@
+.reason-card-observer-div {
+  margin: 0 auto;
+}
+
+.reason-card {
+  padding: 1.2rem;
+  color: white;
+  position: relative;
+  width: clamp(45%, 500px, 90%);
+  margin: 4rem 0;
+  border-radius: 1rem;
+  transition: 1s ease;
+  overflow: hidden;
+  /* overflow: hidden; */
+}
+
+.reason-card::after {
+  content: "";
+  background: linear-gradient(to right, var(--black), transparent);
+  position: absolute;
+  inset: 0;
+}
+
+.reason-card-content {
+  position: relative;
+  z-index: 5;
+  /* display: flex; */
+  /* gap: 1.5rem; */
+}
+
+.reason-card-img-div {
+  position: relative;
+  height: 200px;
+  width: 300px;
+  background: orange;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 2px 2px 2px white, 15px 15px 15px rgba(255, 255, 250, 0.5);
+}
+
+.reason-card-img-div::after {
+}
+
+.reason-img {
+  height: 100%;
+  width: 100%;
+}
+
+.reason-card-info-div {
+  position: relative;
+  margin-top: 1rem;
+  /* height: 150px;
+  width: 100%; */
+}
+
+.reason-h3-title {
+  margin-bottom: 0.5rem;
+}
+
+.blur-card {
+  filter: blur(300px);
+  transform: translateX(10rem);
+}
+
+.clear-blur {
+  filter: blur(0px);
+  transform: translateX(0rem);
+}
