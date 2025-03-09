@@ -10,8 +10,8 @@ function App() {
 
   return (
     <div className="app">
-      <div className="app-bg"></div>
-      <div className="app-content-container">
+       <div className="app-bg"></div>
+      <div className="app-content-container"> 
         <div className="app-content">
           <Navbar/>
           <Header blurb={data.shortBlurb}/>
