@@ -5,6 +5,7 @@ footer {
   font-weight: 200;
   font-family: var(--sourcetext);
   text-transform: uppercase;
+  overflow: hidden;
 }
 
 .footer-content-div {
@@ -12,7 +13,6 @@ footer {
   /* background: teal; */
   width: fit-content;
   margin: 0 auto;
-  overflow: hidden;
 }
 
 .footer-content-div::after {

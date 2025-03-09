@@ -11,8 +11,10 @@ const HowToCard=({howTo})=>{
         <div ref={cardRef} className="how-to-observer-card" id="howto">
           <div className="how-to-card">
           <div className="how-to-title-div">
-            <h2 className={`how-to-title ${isVisible ? 'raise-title' : 'lower-title'}`}>{howTo.title}</h2>
-            <h2 style={{"--duration":howTo.duration,"--delay":"1s"}} className={`shadow-h2-how-to`}>{howTo.title}</h2>
+            <div className="how-to-title-text-wrapper">
+            <h2 className={`how-to-title ${isVisible ? 'raise-title' : ''}`}>{howTo.title}</h2>
+            </div>
+            <h2 style={{"--duration":howTo.duration,"--delay":"1s"}} className={`shadow-h2-how-to ${isVisible ? 'show-shadow-text' : 'hide-shadow-text'}`}>{howTo.title}</h2>
           </div>
           <h5 className="how-to-blurb">{howTo.blurb}</h5>
         </div>
