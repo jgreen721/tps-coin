@@ -17,6 +17,9 @@ function App() {
           <Header blurb={data.shortBlurb}/>
            <Reasons reasons={data.reasons}/>
           <HowTos howTos={data.howTos}/> 
+          <footer>
+            <strong className="footer-strong"><span className="coin-icon">🪙</span> TPS-Coin <span className="poop-icon">💩</span></strong>
+          </footer>
         </div>
       </div>
     </div>
