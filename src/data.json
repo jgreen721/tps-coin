@@ -2,14 +2,14 @@
     "blurb":"Are you tired of overhyped, underdelivering crypto projects? Sick of scams pretending to be revolutionary? Meet Total Piece of Shit Coin (TPSC)— a coin that’s upfront about being absolutely worthless… and that’s exactly why it’s worth something!",
     "shortBlurb":"a coin that’s upfront about being absolutely worthless… and that’s exactly why it’s worth something!",
     "reasons":[
-        {"id":1,"title":"Honesty First","blurb":"Unlike other projects promising the moon, we promise you nothing—except entertainment and potential gains fueled by sheer meme power.","img":"./assets/reasons/reason1.jpeg"},
+        {"id":1,"title":"Honesty First(Really!)","blurb":"Unlike other projects promising the moon, we promise you nothing—except entertainment and potential gains fueled by sheer meme power.","img":"./assets/reasons/reason1.jpeg"},
         {"id":2,"title":"Community-Driven Chaos","blurb":"No roadmaps, no VC backing—just degens like you pushing TPSC to the moon (or straight into the sewer).","img":"./assets/reasons/reason2.webp"},
-        {"id":3,"title":"Liquid That Stinks(In a Good Way)","blurb":"Liquidity That Stinks (in a Good Way): This turd ain’t flushing! Rug-proof smart contract with locked liquidity.","img":"./assets/reasons/reason3.jpg"},
+        {"id":3,"title":"Liquid That Positively Stinks","blurb":"Liquidity That Stinks (in a Good Way): This turd ain’t flushing! Rug-proof smart contract with locked liquidity.","img":"./assets/reasons/reason3.jpg"},
         {"id":4,"title":"100% Meme, 1000% Potential","blurb":"Because let’s be real—if Doge, Shiba, and PEPE can make millionaires, why not a Total Piece of Shit?","img":"./assets/reasons/reason4.jpeg"}
     ],
     "howTos":[
-        {"id":1,"title":"Buy It","blurb":"Available on [DEX of choice], but be quick—TPSC is going viral."},
-        {"id":2,"title":"HODL It","blurb":"Because diamond hands turn shit into gold."},
-        {"id":3,"title":"Shill It","blurb":"The more people hear about this pile, the higher it stacks."}
+        {"id":1,"title":"Buy It","blurb":"Available on [DEX of choice], but be quick—TPSC is going viral.","duration":"6s"},
+        {"id":2,"title":"HOLD It","blurb":"Because diamond hands turn shit into gold.","duration":"7s"},
+        {"id":3,"title":"Shill It","blurb":"The more people hear about this pile, the higher it stacks.","duration":"4.5s"}
     ]
 }
