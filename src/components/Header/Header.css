@@ -8,7 +8,7 @@
   position: relative;
 }
 
-.header::after {
+/* .header::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -35,7 +35,7 @@
   opacity: 85%;
   background: radial-gradient(grey, teal);
   z-index: 20;
-}
+} */
 
 .header-card {
   position: relative;

@@ -15,21 +15,22 @@
   /* overflow: hidden; */
   /* border: 10px solid red; */
 }
-/* 
+
 .app::after {
   content: "";
-  position: absolute;
+  position: fixed;
   inset: 0;
   background-image: url("/appbg.jpg");
   background-size: cover;
   inset: 0;
-} */
+  height: 100vh;
+}
 
-/* .app-bg {
+.app-bg {
   position: absolute;
   inset: 0;
-} */
-/* 
+}
+
 .app-bg::after {
   content: "";
   position: absolute;
@@ -43,7 +44,7 @@
   opacity: 85%;
   background: radial-gradient(grey, teal);
   z-index: 20;
-} */
+}
 
 .app-content {
   width: 100%;
