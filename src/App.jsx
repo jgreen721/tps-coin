@@ -15,8 +15,8 @@ function App() {
         <div className="app-content">
           <Navbar/>
           <Header blurb={data.shortBlurb}/>
-          <Reasons reasons={data.reasons}/>
-          <HowTos howTos={data.howTos}/>
+          {/* <Reasons reasons={data.reasons}/>
+          <HowTos howTos={data.howTos}/> */}
         </div>
       </div>
     </div>
