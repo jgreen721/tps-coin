@@ -4,9 +4,10 @@
   justify-content: space-between;
   /* border: 2px solid white; */
   padding: 1.2rem 3.2rem;
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
+  z-index: 50;
 }
 
 .nav-logo-div {

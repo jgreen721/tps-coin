@@ -4,6 +4,7 @@ import "./Header.css"
 const Header = ({blurb}) => {
   return (
     <div className="header">
+      <div className="header-bg"></div>
       <div className="header-card">
     <div className="header-h1-row slide-in-right">
       <h1>T</h1>

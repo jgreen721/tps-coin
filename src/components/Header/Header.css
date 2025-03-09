@@ -4,7 +4,37 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/appbg.jpg");
+  background-size: cover;
+  inset: 0;
+}
+
+.header-bg {
+  position: absolute;
+  inset: 0;
+}
+
+.header-bg::after {
+  content: "";
+  position: absolute;
+  background: gray;
+  border-radius: 500px;
+  width: 65rem;
+  height: 75rem;
+  top: -35rem;
+  left: -25rem;
+  filter: blur(65px);
+  opacity: 85%;
+  background: radial-gradient(grey, teal);
+  z-index: 20;
 }
 
 .header-card {
@@ -17,6 +47,7 @@
   border-radius: 0.5rem;
   width: clamp(45%, 500px, 90%);
   box-shadow: 10px 4px 15px black;
+  z-index: 50;
 }
 
 .header-card::after {
