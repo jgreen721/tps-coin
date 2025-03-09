@@ -1,5 +1,7 @@
 .how-to-observer-card {
+  margin: 0 auto;
   margin-bottom: 6rem;
+  width: clamp(45%, 500px, 90%);
 }
 .how-to-card {
   text-align: center;

@@ -1,0 +1,61 @@
+footer {
+  text-align: center;
+  padding: 1rem;
+  height: 125px;
+  font-weight: 200;
+  font-family: var(--sourcetext);
+  text-transform: uppercase;
+}
+
+.footer-content-div {
+  position: relative;
+  /* background: teal; */
+  width: fit-content;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.footer-content-div::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: teal;
+  filter: blur(3px);
+  z-index: -1;
+}
+
+.footer-strong {
+  /* border: 2px solid red; */
+  position: relative;
+
+  padding: 0.25rem;
+  border-radius: 15%;
+}
+
+.poop-icon,
+.coin-icon {
+  font-size: 2rem;
+  position: absolute;
+}
+
+.poop-icon {
+  right: -2.5rem;
+  top: -1.25rem;
+  font-size: 2.5rem;
+  transform: scaleY(0);
+  transform-origin: bottom;
+}
+
+.coin-icon {
+  right: -1.5rem;
+  top: -0.5rem;
+  transform: translateY(-10rem);
+}
+
+.scale-y {
+  animation: scaleY 1s 1s forwards;
+}
+
+.lower-el {
+  animation: translateYToZero 2s forwards;
+}

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import {Navbar,Header,Reasons,HowTos} from "./components"
+import {Navbar,Header,Reasons,HowTos,Footer} from "./components"
 import data from "./data.json"
 import './App.css'
 
@@ -17,9 +17,7 @@ function App() {
           <Header blurb={data.shortBlurb}/>
            <Reasons reasons={data.reasons}/>
           <HowTos howTos={data.howTos}/> 
-          <footer>
-            <strong className="footer-strong"><span className="coin-icon">🪙</span> TPS-Coin <span className="poop-icon">💩</span></strong>
-          </footer>
+          <Footer/>
         </div>
       </div>
     </div>
