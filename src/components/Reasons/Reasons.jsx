@@ -22,8 +22,8 @@ const ReasonCard = ({reason})=>{
           <img className="reason-img" src={reason.img} alt={`reason_img-${reason.id}`} />
         </div>
         <div className="reason-card-info-div">
-          <h3 className="thin reason-h3-title">{reason.title}</h3>
-          <h5>{reason.blurb}</h5> 
+          <h2 className="reason-h2-title">{reason.title}</h2>
+          <h5 className="thin reason-blurb">{reason.blurb}</h5> 
         </div>
       </div>
     </div>
